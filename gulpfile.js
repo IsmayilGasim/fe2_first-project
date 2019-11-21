@@ -49,11 +49,11 @@ const buildIMG = () => (
     gulp.src(path.src.img)
         .pipe(gulp.dest(path.dist.img))
 );
-
-const cleanDist = () => (
-    gulp.src(path.dist.self)
-        .pipe(clean())
-);
+//
+// const cleanDist = () => (
+//     gulp.src(path.dist.self)
+//         .pipe(clean())
+// );
 
 const watcher = () => {
     browserSync.init({
@@ -73,7 +73,7 @@ gulp.task('html', buildHTML);
 gulp.task('scss', buildSCSS);
 
 gulp.task('default', gulp.series(
-    cleanDist,
+    // cleanDist,
     buildHTML,
     buildSCSS,
     buildJS,
