@@ -163,7 +163,6 @@
 
         constructor: jQuery,
 
-        // The default length of a jQuery object is 0
         length: 0,
 
         toArray: function() {
